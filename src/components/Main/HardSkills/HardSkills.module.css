@@ -1,0 +1,59 @@
+.skills {
+  background-color: var(--third-bg-color);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 45px 0px 45px;
+  width: 100%;
+}
+.block_tittle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  color: #ffff;
+  padding-bottom: 5px;
+  border-bottom: solid 2px #ffff;
+}
+
+.list {
+  padding: unset;
+}
+
+.list_icons {
+  display: flex;
+  justify-content: space-between;
+  padding: unset;
+}
+
+.item_icons {
+  list-style: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.1s linear;
+}
+.item_icons:hover {
+  transform: scale(1.5);
+}
+
+.html {
+  composes: item_icons;
+  background-image: url(../../../images/html5.png);
+}
+.css {
+  composes: item_icons;
+  background-image: url(../../../images/css3.png);
+}
+.js {
+  composes: item_icons;
+  background-image: url(../../../images/javascript.png);
+}
+.react {
+  composes: item_icons;
+  background-image: url(../../../images/react.png);
+}
+.node {
+  composes: item_icons;
+  background-image: url(../../../images/node-js.png);
+}
